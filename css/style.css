@@ -1,80 +1,353 @@
+/* link google-fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /** RESET **/
 
- html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    list-style:none outside none;
-    text-decoration:none;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  list-style: none outside none;
+  text-decoration: none;
 }
 
-body, html {width:100%;height: 100%;background-color: #fff;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale;}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-a, img {
-    border: 0 none;
-    outline: 0 none;
+a,
+img {
+  border: 0 none;
+  outline: 0 none;
 }
 img {
-	width:100%;
-	display:block;
+  width: 100%;
+  display: block;
 }
 input {
-    outline: 0 none;
-    border: 0 none;
-    background: 0 none;
+  outline: 0 none;
+  border: 0 none;
+  background: 0 none;
 }
 
 /** TYPOGRAPHY **/
 
 p {
-	color:;
-	font-size:;
-	line-height:;
-	font-weight:;
-	margin:;
-	padding:;
+  color: #737373;
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
 }
 
 h1 {
-	color:;
-	font-size:;
-	line-height:;
-	font-weight:;
-	margin:;
-	padding:;
+  color: #4b4b4b;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Serif Display", serif;
+  text-transform: capitalize;
 }
 
 h2 {
-	color:;
-	font-size:;
-	line-height:;
-	font-weight:;
-	margin:;
-	padding:;
+  color: #4b4b4b;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Serif Display", serif;
+  text-transform: capitalize;
 }
 
 h3 {
-	color:;
-	font-size:;
-	line-height:;
-	font-weight:;
-	margin:;
-	padding:;
+  color: #4b4b4b;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Serif Display", serif;
+  text-transform: capitalize;
 }
 
 h4 {
-	color:;
-	font-size:;
-	line-height:;
-	font-weight:;
-	margin:;
-	padding:;
+  color: #4b4b4b;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-family: "DM Serif Display", serif;
+  text-transform: capitalize;
+}
+/* ==============
+global-css
+=============== */
+.container {
+  max-width: 1443px !important;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-/*--- GENERAL ---*/
+/* ===============
+global media
+================== */
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  p {
+    font-size: 11.5px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  h4 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  p {
+    font-size: 12;
+  }
+}
+@media screen and (max-width: 767px) {
+  .short-links {
+    display: none !important;
+  }
+}
+/*================
+ GENERAL 
+	================*/
+
+/* ==================
+  Navbar
+  =================== */
+
+.navbar {
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fff !important;
+}
+.navbar .navbar-brand .main-logo-img {
+  width: 86px;
+  height: 34px;
+}
+.navbar-nav li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+}
+@media screen and (max-width: 1075px) {
+  .navbar-nav li a {
+    margin: 0 15px;
+  }
+}
+.navbar-nav li a p {
+  font-size: 24px;
+}
+.short-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.short-link {
+  width: 27px;
+  height: 27px;
+  margin: 0 0.25rem;
+}
+/* ============
+main page
+================ */
+main {
+  width: 100vw;
+}
+.main-section {
+  position: relative;
+  width: 100vw;
+  min-height: 78%;
+}
+.mainSection-container {
+  max-height: 406px;
+}
+.mainSection-container .main-img-container {
+  position: absolute;
+  width: 537.62px;
+  height: 365px;
+  left: 98px;
+  top: 12px;
+}
+.mainSection-container .mainArticle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 234.03px;
+  height: 215px;
+  left: 32px;
+  top: 75px;
+
+  background: rgba(255, 255, 255, 0.78);
+}
+@media screen and (min-width: 768px) {
+  .mainSection-container .main-img-container {
+    position: absolute;
+    width: 963px;
+    height: 654px;
+    left: 367px;
+    top: 13px;
+
+    background: url(image.png);
+    border-radius: 0px 0px 0px 75px;
+  }
+  .mainSection-container .mainArticle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 492px;
+    height: 452px;
+    left: 103px;
+    top: 254px;
+
+    background: rgba(255, 255, 255, 0.78);
+  }
+  .mainSection-container .mainArticle-container h1 {
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .mainSection-container .mainArticle-container p {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
