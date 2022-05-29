@@ -1,4 +1,2 @@
 // Document Ready
-$(document).ready(function() {
-
-});
+$(document).ready(function () {});
