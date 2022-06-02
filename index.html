@@ -9,82 +9,7 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
     />
     <!--Favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="reposetories/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="reposetories/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="reposetories/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="reposetories/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="reposetories/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="reposetories/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="reposetories/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="reposetories/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="reposetories/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="reposetories/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="reposetories/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="reposetories/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="reposetories/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
+
     <!--Bootstrap Style Sheet -->
     <link
       rel="stylesheet"
@@ -102,14 +27,12 @@
   <body>
     <!-- Header -->
     <header class="main-header">
-      <div class="container">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <!-- nav logo link -->
-          <a class="logo-brand" href="index.html">
-            <img src="./reposetories/logo-brand.svg" alt="SHPX logo" />
+      <div class="container headerContainer">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
+            <img src="./reposetories/logo-brand.svg" alt="SHPX" />
           </a>
-          <!-- nav-btn-toggler -->
           <button
             class="navbar-toggler"
             type="button"
@@ -119,160 +42,321 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <img src="./reposetories/logo-menu.svg" alt="toggler">
           </button>
-          <!-- nav-concollapse -->
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- nav-content -->
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <!-- nav-link -->
-                <a class="nav-link" href="#">Home </a>
+            <!-- nav-links -->
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#section-home">
+                  <p>Home</p>
+                </a>
+                  <span class="sr-only">(current)</span></a
+                >
               </li>
               <li class="nav-item">
-                <!-- nav-link -->
-                <a class="nav-link" href="#">About </a>
+                <a class="nav-link" href="#section-products">
+                  <p>About</p>
+                </a>
               </li>
               <li class="nav-item">
-                <!-- nav-link -->
-                <a class="nav-link" href="#">Products </a>
+                <a class="nav-link" href="#products-section"> <p>Products</p></a>
               </li>
               <li class="nav-item">
-                <!-- nav-link -->
-                <a class="nav-link" href="#">Contact </a>
+                <a class="nav-link" href="#"><p>Contacts</p></a>
               </li>
             </ul>
-            <!-- end of nav-content -->
+            <!-- end of Nav-links -->
             <!-- nav-search-marketplace -->
-            <div class="nav-search-market">
+            <div class="search-market">
               <form action="" method="">
                 <input
                   type="search"
-                  name="search"
                   id="search"
+                  name="search"
                   placeholder="Search"
                 />
               </form>
               <a href="#" class="nav-marketplace">
-                <img src="reposetories/logo-shopcart.svg" alt="shopcard" />
+                <img
+                  src="./reposetories/logo-shopcart.svg"
+                  alt=".logo-shopcart"
+                />
               </a>
             </div>
+            <!-- end of Nav-search-marketplace -->
           </div>
         </nav>
+        <!-- end of Nav -->
       </div>
     </header>
     <!-- end of Header -->
-    <!-- Main-section -->
 
-    <!-- s1 main-banner -->
-    <main>
-      <section class="section-main">
-        <div class="container">
-          <div class="container-main">
-            <!-- banner info div -->
-            <div class="banner-info">
-              <h1>Modern Interior for your Dream House</h1>
-              <p>We custom make design to suits your needs.</p>
-            </div>
-            <!-- banner img-div -->
-            <figure class="banner-imgContainer">
-              <img src="./images/image 1.png" alt="interior design" />
+    <!-- Section Main -->
+    <section class="main-section" id="section-home">
+      <div class="container">
+        <article class="main-article">
+        <figure class="img-container">
+            <img src="./images/Main-img.png" alt="Main-bcg">
+          </figure>
+          <div class="info-box">
+            <h1>Modern Interior for your Dream House</h1>
+            <p>We custom make design to suits your needs.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- end of Section Main -->
+
+    <!-- Section-Products -->
+    <section class="products-section" id="products-section">
+      <div class="container">
+        <h2 class="h1">Products</h2>
+        <!-- products-nav -->
+        <nav>
+          <div class="nav " id="nav-tab" role="tablist">
+          <!-- product-link all -->
+            <a class="nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
+              All
+            </a>
+          <!-- product-link llamp -->
+            <a class="nav-link" id="nav-llamp-tab" data-toggle="tab" href="#nav-llamp" role="tab" aria-controls="nav-llamp" aria-selected="false">
+              Llamp
+            </a>
+          <!-- product-link chair -->
+            <a class="nav-link" id="nav-chair-tab" data-toggle="tab" href="#nav-chair" role="tab" aria-controls="nav-chair" aria-selected="false">
+              Chair
+            </a>
+          <!-- product-link table -->
+            <a class="nav-link" id="nav-table-tab" data-toggle="tab" href="#nav-table" role="tab" aria-controls="nav-table" aria-selected="false">
+              Table
+            </a>
+          <!-- produc-link sofa -->
+            <a class="nav-link" id="nav-sofa-tab" data-toggle="tab" href="#nav-sofa" role="tab" aria-controls="nav-sofa" aria-selected="false">
+              Sofa
+            </a>
+          </div>
+        </nav>
+
+
+<!-- products-content -->
+<div class="tab-content" id="nav-tabContent">
+  <!-- all content -->
+  <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+    <div class="row">
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-1.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-2.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-3.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-4.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-5.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-6.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+    </div>
+  </div>
+
+  <!-- llamp-content -->
+  <div class="tab-pane fade" id="nav-llamp" role="tabpanel" aria-labelledby="nav-llamp-tab">
+    <div class="row">
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-3.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+    </div>
+  </div>
+  <!-- chair-content -->
+  <div class="tab-pane fade" id="nav-chair" role="tabpanel" aria-labelledby="nav-chair-tab">
+    <div class="row">
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-1.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-2.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-4.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+    </div>
+    </div>
+    <!-- table-content -->
+    <div class="tab-pane fade" id="nav-table" role="tabpanel" aria-labelledby="nav-table-tab">
+      <div class="row">
+        <!-- single-product -->
+        <div class="col-md-4">
+          <article class="article-container">
+            <h4 class="article-title">
+              Chaise Molle
+            </h4>
+            <p class="article-price">
+              $18.00
+            </p>
+            <figure class="articleImg-container">
+              <img src="./images/products/products-5.png" alt="prod 1">
             </figure>
-          </div>
-          <div class="banner-design"></div>
+          </article>
         </div>
-      </section>
-      <!-- end of s1 main-banner -->
-      <section class="section-products">
-        <div class="container">
-          <!-- page-name -->
-          <h2 class="h1">Products</h2>
-          <!-- products tab -->
-          <ul class="nav nav-pills nav-productsTab" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a href="#" class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a href="#" class="nav-link" id="pills-lamp-tab" data-toggle="pill" href="#pills-lamp" role="tab" aria-controls="pills-lamp" aria-selected="false">Lamp</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a href="#" class="nav-link" id="pills-chair-tab" data-toggle="pill" href="#pills-chair" role="tab" aria-controls="pills-chair" aria-selected="false">Chair</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a href="#" class="nav-link" id="pills-ttable-tab" data-toggle="pill" href="#pills-ttable" role="tab" aria-controls="pills-ttable" aria-selected="false">Table</a>
-            </li  class="nav-item">
-            <li class="nav-item" role="presentation">
-              <a href="#" class="nav-link" id="pills-sofa-tab" data-toggle="pill" href="#pills-sofa" role="tab" aria-controls="pills-sofa" aria-selected="false">Sofa</a>
-            </li>
-          </ul>
-          <!-- products -->
-          <div class="tab-content" id="pills-tabContent">
+        <!-- end of single-product -->
+      </div>
+  </div>
+  <!-- sofa-content -->
+  <div class="tab-pane fade" id="nav-sofa" role="tabpanel" aria-labelledby="nav-sofa-tab">
+    <div class="row">
+      <!-- single-product -->
+      <div class="col-md-4">
+        <article class="article-container">
+          <h4 class="article-title">
+            Chaise Molle
+          </h4>
+          <p class="article-price">
+            $18.00
+          </p>
+          <figure class="articleImg-container">
+            <img src="./images/products/products-6.png" alt="prod 1">
+          </figure>
+        </article>
+      </div>
+      <!-- end of single-product -->
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    <!-- end of Section Products -->
 
-            <div class="row">
-              <div class="col-lg-4 tab-pane fade show active" id="pills-all pills-chair" role="tabpanel" aria-labelledby="pills-all-tab pills-chair-tab">
-              <article class="article-container">
-                <h4 class="article-title">Chaise Molle</h4>
-                <p class="article-price">$18.00</p>
-                <figure class="prodImgContainer">
-                  <img src="./images/products/products-1.png" alt="prod 1">
-                </figure>
-              </article>
-            </div>
-            <div class="col-lg-4 tab-pane fade show active" id="pills-all pills-chair" role="tabpanel" aria-labelledby="pills-all-tab pills-chair-tab">
-              <article class="article-container">
-                <h4 class="article-title">Chaise Molle</h4>
-                <p class="article-price">$18.00</p>
-                <figure class="prodImgContainer">
-                  <img src="./images/products/products-2.png" alt="prod-2">
-                </figure>
-              </article>
-            </div>
-            <div class="col-lg-4 tab-pane fade show active" id="pills-all pills-lamp" role="tabpanel" aria-labelledby="pills-all-tab pills-lamp-tab">
-              <article class="article-container">
-                <h4 class="article-title">Chaise Molle</h4>
-                <p class="article-price">$18.00</p>
-                <figure class="prodImgContainer">
-                  <img src="./images/products/products-3.png" alt="prod-3">
-                </figure>
-              </article>
-            </div>
-            <div class="col-lg-4 tab-pane fade show active" id="pills-all pills-chair" role="tabpanel" aria-labelledby="pills-all-tab pills-chair-tab">
-              <article class="article-container">
-                <h4 class="article-title">Chaise Molle</h4>
-                <p class="article-price">$18.00</p>
-                <figure class="prodImgContainer">
-                  <img src="./images/products/products-4.png" alt="prod-4">
-                </figure>
-              </article>
-            </div>
-            <div class="col-lg-4 tab-pane fade show active" id="pills-all pills-ttable" role="tabpanel" aria-labelledby="pills-all-tab pills-ttable-tab">
-              <article class="article-container">
-                <h4 class="article-title">Chaise Molle</h4>
-                <p class="article-price">$18.00</p>
-                <figure class="prodImgContainer">
-                  <img src="./images/products/products-5.png" alt="prod-5">
-                </figure>
-              </article>
-            </div>
-            <div class="col-lg-4 tab-pane fade show active"id="pills-all pills-sofa" role="tabpanel" aria-labelledby="pills-all-tab pills-sofa-tab">
-              <article class="article-container">
-                <h4 class="article-title">Chaise Molle</h4>
-                <p class="article-price">$18.00</p>
-                <figure class="prodImgContainer">
-                  <img src="./images/products/products-6.png" alt="prod-6">
-                </figure>
-              </article>
-            </div>
-            
-            </div>
-          </div>
-          
-        </div>
-      </section>
-      <!-- s2 products -->
-      <!-- end of s2 products -->
-    </main>
-    
+    <!-- Section-About -->
+
+    <!-- end of Section- about -->
+
     <!-- Bootstrap Scripts -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Slick Scripts -->
