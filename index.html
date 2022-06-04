@@ -111,20 +111,23 @@
 
     <!-- Section-Products -->
     <section class="products-section" id="products-section">
+        <!-- Products-links -->
       <div class="container">
-        <h2 class="h1">Products</h2>
-        <!-- products-nav -->
-        <nav>
+        <div class="title-container">
+
+          <h2 class="h1">Products</h2>
+          <!-- products-nav -->
+          <nav  class="products-nav">
           <div class="nav " id="nav-tab" role="tablist">
-          <!-- product-link all -->
+            <!-- product-link all -->
             <a class="nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
               All
             </a>
-          <!-- product-link llamp -->
+            <!-- product-link llamp -->
             <a class="nav-link" id="nav-llamp-tab" data-toggle="tab" href="#nav-llamp" role="tab" aria-controls="nav-llamp" aria-selected="false">
               Llamp
             </a>
-          <!-- product-link chair -->
+            <!-- product-link chair -->
             <a class="nav-link" id="nav-chair-tab" data-toggle="tab" href="#nav-chair" role="tab" aria-controls="nav-chair" aria-selected="false">
               Chair
             </a>
@@ -138,10 +141,39 @@
             </a>
           </div>
         </nav>
-
-
-<!-- products-content -->
-<div class="tab-content" id="nav-tabContent">
+        <!-- products links-dropdown -->
+        <div class="dropdown">
+          <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <!-- product-link all -->
+            <a class="dropdown-item active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
+              All
+            </a>
+            <!-- product-link llamp -->
+            <a class="dropdown-item" id="nav-llamp-tab" data-toggle="tab" href="#nav-llamp" role="tab" aria-controls="nav-llamp" aria-selected="false">
+              Llamp
+            </a>
+            <!-- product-link chair -->
+            <a class="dropdown-item" id="nav-chair-tab" data-toggle="tab" href="#nav-chair" role="tab" aria-controls="nav-chair" aria-selected="false">
+              Chair
+            </a>
+          <!-- product-link table -->
+            <a class="dropdown-item" id="nav-table-tab" data-toggle="tab" href="#nav-table" role="tab" aria-controls="nav-table" aria-selected="false">
+              Table
+            </a>
+          <!-- produc-link sofa -->
+            <a class="dropdown-item" id="nav-sofa-tab" data-toggle="tab" href="#nav-sofa" role="tab" aria-controls="nav-sofa" aria-selected="false">
+              Sofa
+            </a>
+          </div>
+        </div>
+      </div>
+        <!-- end of products links -->
+        
+      <!-- products-content -->
+      <div class="tab-content" id="nav-tabContent">
   <!-- all content -->
   <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
     <div class="row">
@@ -349,11 +381,43 @@
     </div>
   </div>
 </div>
-      </div>
-    </section>
-    <!-- end of Section Products -->
+</div>
+</section>
+<!-- end of Section Products -->
 
-    <!-- Section-About -->
+<!-- Section-About -->
+<section class="about-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <button type="button" class="slick-prev">Previous</button>
+        <div class="about-carosel">
+          <figure>
+            <img src="./images/about-img.jpg" alt="img1">
+          </figure>
+          <figure>
+            <img src="./images/about-img-2.jpg" alt="img1">
+          </figure>
+          <figure>
+            <img src="./images/about-img-3.jpg" alt="img1">
+          </figure>
+        </div>
+        <button type="button" class="slick-next">Next</button>
+      </div>
+      <div class="col-md-4">
+        <div class="about-info">
+          <h2 class="h1">
+            Showcase
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, eleifend viverra nam libero tellus. Luctus ornare ac, dolor tempor pellentesque nec. 
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- end of Section- about -->
 

@@ -183,7 +183,7 @@ h4 {
   padding: 0;
   font-family: "DM Serif Display", serif;
 }
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   body {
     font-size: 24px;
     line-height: 28.8px;
@@ -234,22 +234,26 @@ global-css
     line-height: 70px;
   }
 }
-
+section {
+  width: 100%;
+}
 /*================
  Header
 	================*/
 .main-header {
   width: 100%;
-  height: 126px;
   display: flex;
   align-items: center;
+  padding: 46px 4px 46px 4px;
 }
 .main-header .navbar-brand img {
   width: 86px;
-  height: 34px;
 }
 .navbar .navbar-nav .nav-link {
   padding: 0 30px 0 30px;
+}
+.navbar {
+  padding: 0;
 }
 .navbar-nav {
   display: flex;
@@ -285,20 +289,40 @@ global-css
   height: 26.03px;
   margin-left: 15px;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
+  .main-header {
+    padding: 35px 0 35px 0;
+    overflow-x: hidden;
+  }
   .search-market {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-end;
+    margin-bottom: 5px;
+  }
+  .navbar-nav .nav-item .nav-link {
+    padding: 3px 0 3px 0;
+    text-align: right;
+  }
+  .navbar {
+    padding: 35px 7px 35px 7px;
+  }
+  .search-market {
+    margin-bottom: 5px;
   }
 }
-
+@media (max-height: 1229px) {
+  .navbar-nav {
+    padding-left: 0;
+  }
+}
 /* ==============
 Section-Main
 ============== */
 .main-section {
   width: 100%;
   position: relative;
+  padding: 13px 0 149px 0;
 }
 .main-section::after {
   content: "";
@@ -314,14 +338,13 @@ Section-Main
 .main-section .main-article {
   position: relative;
   width: 100%;
-  height: 816px;
+  display: flex;
 }
 .main-article .img-container {
   width: 963px;
-  position: absolute;
-  top: 13px;
-  right: 0;
+  position: relative;
   z-index: 2;
+  margin-left: auto;
 }
 .main-article .info-box {
   background-color: rgba(255, 255, 255, 0.78);
@@ -333,13 +356,26 @@ Section-Main
   left: 0;
   z-index: 3;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
+  .main-section {
+    padding: 12px 0 29px 0;
+    overflow-x: hidden;
+  }
   .main-section .main-article {
-    height: 406px;
+    height: 365px;
   }
   .main-article .img-container {
     width: 537.62px;
+    min-height: 365px;
     left: 98px;
+    position: absolute;
+  }
+  .main-article .img-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .main-article .info-box {
     width: 234.03px;
@@ -390,10 +426,58 @@ Section-Products
 .article-container .article-price {
   margin-bottom: 36px;
 }
-
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+.products-section .dropdown {
+  display: none;
+}
+@media (max-width: 991px) {
+  .products-section {
+    padding-top: 14px;
+    overflow-x: hidden;
+  }
+  .products-nav {
+    display: none;
+  }
+  .title-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .products-section .dropdown {
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    display: block;
+  }
+  .products-btn {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  .products-section .tab-content .row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .products-section .tab-content .row .col-md-4 {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .products-section .article-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 /* ============
 Section-about
 =============== */
+.abouot-section {
+  position: relative;
+}
 
 /* =========
 Foooter
