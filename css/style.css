@@ -242,7 +242,9 @@ section {
 	================*/
 .main-header {
   width: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
   padding: 46px 4px 46px 4px;
 }
@@ -256,13 +258,16 @@ section {
   padding: 0;
 }
 .navbar-nav {
+  display: -webkit-box;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   padding-left: 200px;
 }
 .search-market {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: end;
   justify-content: flex-end;
 }
 .search-market form input {
@@ -273,6 +278,7 @@ section {
   background-position: center right;
   background-repeat: no-repeat;
   background-size: 26.03px;
+  -webkit-transition: 0.3s linear 0s;
   transition: 0.3s linear 0s;
   cursor: pointer;
 }
@@ -295,8 +301,12 @@ section {
     overflow-x: hidden;
   }
   .search-market {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
+    -webkit-box-align: end;
     align-items: flex-end;
     margin-bottom: 5px;
   }
@@ -338,6 +348,7 @@ Section-Main
 .main-section .main-article {
   position: relative;
   width: 100%;
+  display: -webkit-box;
   display: flex;
 }
 .main-article .img-container {
@@ -348,6 +359,7 @@ Section-Main
 }
 .main-article .info-box {
   background-color: rgba(255, 255, 255, 0.78);
+  -webkit-backdrop-filter: blur(30px);
   backdrop-filter: blur(30px);
   width: 492px;
   padding: 62.5px 30px 62.5px 0;
@@ -394,7 +406,9 @@ Section-Products
   margin-bottom: 49px;
 }
 .products-section .nav {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   width: 100%;
   margin-bottom: 86px;
@@ -427,7 +441,10 @@ Section-Products
   margin-bottom: 36px;
 }
 .title-container {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
 }
 .products-section .dropdown {
@@ -442,7 +459,10 @@ Section-Products
     display: none;
   }
   .title-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     flex-direction: row;
+    -webkit-box-pack: justify;
     justify-content: space-between;
   }
   .products-section .dropdown {
@@ -456,29 +476,106 @@ Section-Products
     font-family: "Roboto", sans-serif;
   }
   .products-section .tab-content .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: scroll;
   }
   .products-section .tab-content .row .col-md-4 {
+    -webkit-box-flex: 0;
     flex: 0 0 100%;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
     max-width: 100%;
   }
   .products-section .article-container {
     width: 80%;
-    margin: 0 auto;
   }
 }
 /* ============
 Section-about
 =============== */
-.abouot-section {
-  position: relative;
+.about-section {
+  width: 100%;
+  display: flex;
 }
-
+.about-section .row {
+  padding: 58px 0 84px 26px;
+}
+.about-section .about-info {
+  margin-top: 70px;
+  margin-left: 38px;
+}
+.about-section .about-info h2 {
+  margin-bottom: 30px;
+}
+.about-section .about-info p {
+  margin-bottom: 50px;
+}
+.about-info .btn-container {
+  display: flex;
+  flex-direction: row;
+}
+.slick-arrow {
+  width: 70px;
+  height: 70px;
+  background-color: #faf4ef;
+  margin-right: 12px;
+  border: none;
+  outline: none;
+}
+.slick-arrow:focus {
+  border: none;
+  outline: none;
+}
+.about-info .prev-btn {
+  background-image: url(../reposetories/arrow-prev.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px;
+}
+.about-info .next-btn {
+  background-image: url(../reposetories/arrow-next.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 37px;
+}
+.about-info .slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
 /* =========
 Foooter
-=========== */ ;
+=========== */
+
+.main-footer {
+  width: 100%;
+  display: flex;
+}
+.main-footer .footer-container {
+  width: 100%;
+  margin: 95px 0 90px 10px;
+  background-color: #faf4ef;
+  border-radius: 0px 100px 0px 0px;
+  padding: 57px 0 82px 88px;
+}
+.footer-container .footer-btn {
+  display: inline-block;
+  width: 214px;
+  height: 68px;
+  padding: 19px 0 19px 0;
+  text-align: center;
+  margin-right: 30px;
+  background-color: #4b4b4b;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.footer-container .footer-btn:last-child {
+  background-color: #ffffff;
+  color: #4b4b4b;
+}

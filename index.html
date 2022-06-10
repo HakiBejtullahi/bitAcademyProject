@@ -139,14 +139,17 @@
             <a class="nav-link" id="nav-sofa-tab" data-toggle="tab" href="#nav-sofa" role="tab" aria-controls="nav-sofa" aria-selected="false">
               Sofa
             </a>
+            
           </div>
         </nav>
         <!-- products links-dropdown -->
-        <div class="dropdown">
-          <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <!-- fix buggg -->
+        <!-- fix buggg -->
+        <div class="dropdown" >
+          <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton nav-tab" role="tablist"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             All
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"  >
             <!-- product-link all -->
             <a class="dropdown-item active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
               All
@@ -390,34 +393,46 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <button type="button" class="slick-prev">Previous</button>
-        <div class="about-carosel">
-          <figure>
-            <img src="./images/about-img.jpg" alt="img1">
-          </figure>
-          <figure>
-            <img src="./images/about-img-2.jpg" alt="img1">
-          </figure>
-          <figure>
-            <img src="./images/about-img-3.jpg" alt="img1">
-          </figure>
+          <div class="about-carosel">
+            <figure>
+              <img src="./images/about-img.jpg" alt="img1">
+            </figure>
+            <figure>
+              <img src="./images/about-img-2.jpg" alt="img1">
+            </figure>
+            <figure>
+              <img src="./images/about-img-3.jpg" alt="img1">
+            </figure>
+          </div>
         </div>
-        <button type="button" class="slick-next">Next</button>
-      </div>
-      <div class="col-md-4">
-        <div class="about-info">
+        <div class="col-md-4">
+          <div class="about-info">
           <h2 class="h1">
             Showcase
           </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, eleifend viverra nam libero tellus. Luctus ornare ac, dolor tempor pellentesque nec. 
           </p>
-          
+          <div class="btn-container">
+            <button class="prev-btn"></button>
+            <button class="next-btn"></button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<footer class="main-footer">
+  <div class="container">
+    <div class="footer-container">
+      <h2 class="h1">Get your quotation today</h2>
+      <div class="footer-btnContainer">
+        <a href="#" class="footer-btn">Quote me</a>
+        <a href="#" class="footer-btn">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
     <!-- end of Section- about -->
 
