@@ -579,3 +579,51 @@ Foooter
   background-color: #ffffff;
   color: #4b4b4b;
 }
+.modal-body {
+  background-color: #faf4ef;
+}
+.modal-body form .btn-primary {
+  background-color: #faf4ef;
+  color: #4b4b4b;
+  border-color: #faf4ef;
+  outline-color: #faf4ef;
+  box-shadow: none;
+  border: 2px solid #4b4b4b;
+}
+.modal-body form .btn-primary:hover {
+  background-color: #4b4b4b;
+  color: #faf4ef;
+  border-color: #faf4ef;
+  outline-color: #faf4ef;
+}
+.modal-body form .btn-primary:focus {
+  background-color: #4b4b4b;
+  color: #faf4ef;
+  border-color: #faf4ef;
+  outline-color: #faf4ef;
+  box-shadow: none;
+}
+.modal-body form .btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #4b4b4b;
+  color: #faf4ef;
+  border-color: #faf4ef;
+  outline-color: #faf4ef;
+  box-shadow: none;
+}
+.modal-body form input {
+  margin-bottom: 10px;
+}
+.modal-body form textarea {
+  margin-bottom: 10px;
+}
+.modal .modal-header {
+  background-color: #faf4ef;
+}
+.modal .modal-header h3 {
+  margin: 0 auto;
+}
+.modal .modal-header .close {
+  color: #4b4b4b;
+  opacity: 1;
+}
