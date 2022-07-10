@@ -1,5 +1,5 @@
 /* link google-fonts */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /** RESET **/
 
@@ -123,7 +123,7 @@ input {
 
 /** TYPOGRAPHY **/
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 11.5px;
   line-height: 14.5px;
@@ -136,7 +136,7 @@ p {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
 }
 
@@ -148,7 +148,7 @@ h1 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
 }
 
 h2 {
@@ -159,7 +159,7 @@ h2 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
 }
 
 h3 {
@@ -170,7 +170,7 @@ h3 {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
 }
 
 h4 {
@@ -181,7 +181,7 @@ h4 {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
 }
 @media (min-width: 992px) {
   body {
@@ -213,6 +213,9 @@ h4 {
 /* ==============
 global-css
 =============== */
+html {
+  scroll-behavior: smooth;
+}
 @media (min-width: 1320px) {
   .container {
     max-width: 1260px;
@@ -226,7 +229,7 @@ global-css
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
 }
 @media (min-width: 800px) {
   .h1 {
@@ -273,7 +276,7 @@ section {
 .search-market form input {
   width: 200px;
   height: 26.03px;
-  padding-left: 200px;
+  padding: 0px 26.03px 0px 200px;
   background-image: url(../reposetories/logo-search.svg);
   background-position: center right;
   background-repeat: no-repeat;
@@ -283,9 +286,12 @@ section {
   cursor: pointer;
 }
 .search-market form input:focus {
+  cursor: text;
+}
+.search-market form input:focus {
   width: 200px;
   padding-left: 0px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #4b4b4b;
   border: 2px solid #4b4b4b;
 }
@@ -335,7 +341,7 @@ Section-Main
   padding: 13px 0 149px 0;
 }
 .main-section::after {
-  content: "";
+  content: '';
   height: 207px;
   width: 50%;
   position: absolute;
@@ -468,12 +474,12 @@ Section-Products
   .products-section .dropdown {
     padding-top: 10px;
     font-size: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: block;
   }
   .products-btn {
     font-size: 20px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   .products-section .tab-content .row {
     -webkit-box-orient: horizontal;
